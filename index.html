@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anchor Auto Sales — Holiday Pack &amp; Commercials</title>
+  <meta name="description" content="Holiday flyers, QR codes, videos, and commercials for Anchor Auto Sales in Russell Springs, Kentucky. The Home of Integrity.">
+  <link rel="icon" href="assets/logo-round.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0A1F3C;
+      --deep: #06142A;
+      --late: #071A48;
+      --sea: #14457A;
+      --wave: #1F6FB5;
+      --red: #E3393F;
+      --logo-red: #E0101E;
+      --gold: #D6B27A;
+      --steel: #CFD8E6;
+      --foam: #EEF6FF;
+      --muted: #A9BDD6;
+      --white: #FFFFFF;
+      --radius: 14px;
+      --shadow: 0 10px 28px rgba(6, 20, 42, 0.28);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Source Sans 3", system-ui, sans-serif;
+      color: var(--foam);
+      background: var(--deep);
+      line-height: 1.5;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; }
+    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+
+    header.hero {
+      background:
+        radial-gradient(1200px 500px at 50% -10%, rgba(31, 111, 181, 0.28), transparent 60%),
+        linear-gradient(180deg, var(--navy) 0%, var(--deep) 100%);
+      border-bottom: 3px solid var(--logo-red);
+      padding: 28px 0 32px;
+      text-align: center;
+    }
+    header.hero .logo { width: 112px; height: 112px; margin: 0 auto 14px; }
+    header.hero h1 {
+      font-family: "Alfa Slab One", Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.7rem, 6vw, 2.6rem);
+      letter-spacing: 0.02em;
+      margin: 0 0 4px;
+      line-height: 1.15;
+    }
+    header.hero .slogan {
+      font-family: "Oswald", Impact, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--gold);
+      font-size: 0.95rem;
+      margin: 0 0 10px;
+    }
+    header.hero .lede {
+      margin: 0 auto 16px;
+      max-width: 36rem;
+      color: var(--steel);
+      font-size: 1.02rem;
+    }
+    header.hero .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+    }
+    header.hero .meta a { color: var(--foam); text-decoration: none; border-bottom: 1px solid var(--sea); }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 18px;
+    }
+    nav a {
+      font-family: "Oswald", Impact, sans-serif;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      text-decoration: none;
+      font-size: 0.82rem;
+      padding: 8px 14px;
+      border: 1px solid var(--sea);
+      border-radius: 999px;
+      color: var(--foam);
+      background: rgba(20, 69, 122, 0.35);
+    }
+
+    section { padding: 36px 0 12px; }
+    h2 {
+      font-family: "Oswald", Impact, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 1.35rem;
+      margin: 0 0 8px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--logo-red);
+      display: inline-block;
+    }
+    .section-intro { color: var(--muted); margin: 0 0 20px; max-width: 40rem; }
+
+    .preview {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 22px;
+      background: var(--navy);
+    }
+
+    .holiday-list { display: grid; gap: 28px; }
+    .holiday {
+      background: var(--navy);
+      border: 1px solid var(--sea);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .holiday h3 {
+      font-family: "Alfa Slab One", Georgia, serif;
+      font-weight: 400;
+      font-size: 1.45rem;
+      margin: 0 0 2px;
+    }
+    .holiday .tagline { color: var(--gold); margin: 0 0 14px; font-size: 1.02rem; }
+    .holiday-grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 720px) {
+      .holiday-grid { grid-template-columns: 1fr 1fr 1fr; align-items: start; }
+    }
+    .panel-label {
+      font-family: "Oswald", Impact, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin: 0 0 8px;
+    }
+    .zoom {
+      cursor: zoom-in;
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--deep);
+      border: 1px solid rgba(31, 111, 181, 0.4);
+    }
+    .zoom img { width: 100%; }
+    .media-slot video {
+      width: 100%;
+      border-radius: 10px;
+      background: #000;
+      display: block;
+      border: 1px solid rgba(31, 111, 181, 0.4);
+    }
+    .coming {
+      min-height: 220px;
+      border: 2px dashed var(--sea);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: var(--muted);
+      padding: 20px;
+      background: rgba(6, 20, 42, 0.4);
+    }
+    .coming strong {
+      font-family: "Oswald", Impact, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--steel);
+      font-weight: 500;
+      display: block;
+      margin-bottom: 4px;
+    }
+    audio { width: 100%; margin-top: 10px; }
+
+    .cards {
+      display: grid;
+      gap: 18px;
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+    @media (min-width: 640px) {
+      .cards.commercials { grid-template-columns: repeat(2, 1fr); }
+      .cards.audio-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 960px) {
+      .cards.commercials { grid-template-columns: repeat(3, 1fr); }
+    }
+    .card {
+      background: var(--navy);
+      border: 1px solid var(--sea);
+      border-radius: 16px;
+      padding: 14px;
+      box-shadow: var(--shadow);
+    }
+    .card h3 {
+      font-family: "Oswald", Impact, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-size: 1.05rem;
+      margin: 10px 0 0;
+    }
+    .card .dur { color: var(--muted); font-size: 0.9rem; margin: 2px 0 0; }
+    .card video { width: 100%; border-radius: 10px; background: #000; display: block; }
+
+    footer.site {
+      margin-top: 20px;
+      padding: 28px 0 40px;
+      border-top: 3px solid var(--logo-red);
+      text-align: center;
+      color: var(--muted);
+    }
+    footer.site .logo { width: 72px; height: 72px; margin: 0 auto 10px; }
+    footer.site strong { color: var(--foam); }
+    footer.site a { color: var(--foam); }
+
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 20, 42, 0.92);
+      z-index: 50;
+      padding: 16px;
+      overflow: auto;
+      align-items: center;
+      justify-content: center;
+    }
+    #lightbox.open { display: flex; }
+    #lightbox img { max-width: min(720px, 100%); max-height: 92vh; margin: auto; border-radius: 8px; }
+    #lightbox button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: var(--logo-red);
+      color: #fff;
+      border: 0;
+      border-radius: 999px;
+      width: 40px;
+      height: 40px;
+      font-size: 1.3rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <img class="logo" id="site-logo" src="assets/logo-round.png" alt="Anchor Auto Sales logo">
+      <h1 id="site-name">Anchor Auto Sales</h1>
+      <p class="slogan" id="site-slogan">The Home of Integrity</p>
+      <p class="lede" id="site-lede">Holiday pack and commercials for Jeff and Kim — flyers, QR codes, videos, and radio spots, all in one place.</p>
+      <p class="meta" id="site-meta"></p>
+      <nav>
+        <a href="#holidays">Holiday pack</a>
+        <a href="#commercials">Commercials</a>
+        <a href="#audio">Radio &amp; songs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="holidays">
+      <div class="wrap">
+        <h2>Holiday pack</h2>
+        <p class="section-intro">Seven holiday flyers with matching QR codes. Videos are in for Black Friday and Christmas; the other five have a slot ready, and each holiday already has its :30 song.</p>
+        <img class="preview" src="assets/holiday-preview.jpg" alt="All seven Anchor Auto Sales holiday flyers in a row">
+        <div class="holiday-list" id="holiday-list"></div>
+      </div>
+    </section>
+
+    <section id="commercials">
+      <div class="wrap">
+        <h2>Commercials</h2>
+        <p class="section-intro">Finished spots for the lot — from the 80s and moon pieces to the on-hold mic video.</p>
+        <div class="cards commercials" id="commercial-list"></div>
+      </div>
+    </section>
+
+    <section id="audio">
+      <div class="wrap">
+        <h2>Radio &amp; songs</h2>
+        <p class="section-intro">Standalone audio. Holiday jingles also sit on each holiday card above; once that holiday’s video is in, the song plays in the video.</p>
+        <div class="cards audio-cards" id="audio-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap" id="site-footer"></div>
+  </footer>
+
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button type="button" id="lightbox-close" aria-label="Close">&times;</button>
+    <img alt="">
+  </div>
+
+  <script>
+    /* ============================================================
+       EDIT THIS DATA to relabel the page or add media.
+       Assets live under assets/. Do not move the originals;
+       copy new files into this folder, then update the fields below.
+       ============================================================ */
+
+    const SITE = {
+      name: "Anchor Auto Sales",
+      legal: "Anchor Auto Sales LLP",
+      slogan: "The Home of Integrity",
+      owners: "Jeff and Kim",
+      lede: "Holiday pack and commercials for Jeff and Kim — flyers, QR codes, videos, and radio spots, all in one place.",
+      address: "3135 S Hwy 127, Russell Springs, KY 42642",
+      phone: "(270) 866-2021",
+      phoneHref: "tel:+12708662021",
+      website: "https://www.anchorauto270.com",
+      websiteLabel: "anchorauto270.com",
+      facebook: "https://www.facebook.com/AnchorAutoSales270",
+      hours: "Mon–Fri 9–5 · Sat 9–2 · Sun Closed",
+      logo: "assets/logo-round.png"
+    };
+
+    /* To add a holiday video: drop the mp4 in assets/videos/, a poster
+       in assets/posters/, then set the video and poster fields on that
+       holiday. Example:
+         video: "assets/videos/holiday-thanksgiving.mp4",
+         poster: "assets/posters/holiday-thanksgiving.jpg",
+    */
+    const HOLIDAYS = [
+      {
+        id: "new-year",
+        name: "New Year 2027",
+        tagline: "New year. New roads ahead.",
+        flyer: "assets/flyers/new-year.jpg",
+        qr: "assets/qr/new-year.jpg",
+        audio: "assets/audio/holiday-new-year.mp3",
+        video: null,
+        poster: null
+      },
+      {
+        id: "memorial-day",
+        name: "Memorial Day",
+        tagline: "Remembering those who gave it all.",
+        flyer: "assets/flyers/memorial-day.jpg",
+        qr: "assets/qr/memorial-day.jpg",
+        audio: "assets/audio/holiday-memorial-day.mp3",
+        video: null,
+        poster: null
+      },
+      {
+        id: "fourth-of-july",
+        name: "Fourth of July",
+        tagline: "Red, white, and roll it home.",
+        flyer: "assets/flyers/fourth-of-july.jpg",
+        qr: "assets/qr/fourth-of-july.jpg",
+        audio: "assets/audio/holiday-fourth-of-july.mp3",
+        video: null,
+        poster: null
+      },
+      {
+        id: "labor-day",
+        name: "Labor Day",
+        tagline: "You earned this ride.",
+        flyer: "assets/flyers/labor-day.jpg",
+        qr: "assets/qr/labor-day.jpg",
+        audio: "assets/audio/holiday-labor-day.mp3",
+        video: null,
+        poster: null
+      },
+      {
+        id: "thanksgiving",
+        name: "Thanksgiving",
+        tagline: "From our family to yours.",
+        flyer: "assets/flyers/thanksgiving.jpg",
+        qr: "assets/qr/thanksgiving.jpg",
+        audio: "assets/audio/holiday-thanksgiving.mp3",
+        video: null,
+        poster: null
+      },
+      {
+        id: "black-friday",
+        name: "Black Friday",
+        tagline: "Skip the mall. Come to the lot.",
+        flyer: "assets/flyers/black-friday.jpg",
+        qr: "assets/qr/black-friday.jpg",
+        audio: "assets/audio/holiday-black-friday.mp3",
+        video: "assets/videos/holiday-black-friday.mp4",
+        poster: "assets/posters/holiday-black-friday.jpg"
+      },
+      {
+        id: "christmas",
+        name: "Christmas",
+        tagline: "Wishing you joy this holiday season.",
+        flyer: "assets/flyers/christmas.jpg",
+        qr: "assets/qr/christmas.jpg",
+        audio: "assets/audio/holiday-christmas.mp3",
+        video: "assets/videos/holiday-christmas.mp4",
+        poster: "assets/posters/holiday-christmas.jpg"
+      }
+    ];
+
+    /* To add a commercial: copy an object, change the fields, and
+       drop the mp4 + poster into assets/. ratio is a CSS aspect-ratio. */
+    const COMMERCIALS = [
+      {
+        id: "80s",
+        title: "80s Commercial",
+        duration: "0:15",
+        src: "assets/videos/commercial-80s.mp4",
+        poster: "assets/posters/commercial-80s.jpg",
+        ratio: "16 / 9"
+      },
+      {
+        id: "lunar",
+        title: "On the Moon",
+        duration: "0:20",
+        src: "assets/videos/commercial-lunar.mp4",
+        poster: "assets/posters/commercial-lunar.jpg",
+        ratio: "16 / 9"
+      },
+      {
+        id: "pixel",
+        title: "Pixel Commercial",
+        duration: "0:23",
+        src: "assets/videos/commercial-pixel.mp4",
+        poster: "assets/posters/commercial-pixel.jpg",
+        ratio: "9 / 16"
+      },
+      {
+        id: "spot-a",
+        title: "Quality Used",
+        duration: "0:18",
+        src: "assets/videos/commercial-spot-a.mp4",
+        poster: "assets/posters/commercial-spot-a.jpg",
+        ratio: "4 / 5"
+      },
+      {
+        id: "spot-b",
+        title: "Fair Prices",
+        duration: "0:26",
+        src: "assets/videos/commercial-spot-b.mp4",
+        poster: "assets/posters/commercial-spot-b.jpg",
+        ratio: "4 / 5"
+      },
+      {
+        id: "onhold",
+        title: "On-Hold Mic Spot",
+        duration: "1:11",
+        src: "assets/videos/commercial-onhold.mp4",
+        poster: "assets/posters/commercial-onhold.jpg",
+        ratio: "9 / 16"
+      }
+    ];
+
+    const AUDIO = [
+      {
+        id: "weatherman",
+        title: "Weatherman Radio Spot",
+        duration: "0:30",
+        src: "assets/audio/weatherman-radio.mp3"
+      },
+      {
+        id: "jingle",
+        title: "Anchor Auto Sales Jingle",
+        duration: "0:24",
+        src: "assets/audio/jingle.mp3"
+      }
+    ];
+
+    function el(html) {
+      const t = document.createElement("template");
+      t.innerHTML = html.trim();
+      return t.content.firstElementChild;
+    }
+
+    function renderSite() {
+      document.getElementById("site-logo").src = SITE.logo;
+      document.getElementById("site-name").textContent = SITE.name;
+      document.getElementById("site-slogan").textContent = SITE.slogan;
+      document.getElementById("site-lede").textContent = SITE.lede;
+      document.getElementById("site-meta").innerHTML =
+        SITE.address + " · <a href=\"" + SITE.phoneHref + "\">" + SITE.phone + "</a><br>" +
+        "<a href=\"" + SITE.website + "\" target=\"_blank\" rel=\"noopener\">" + SITE.websiteLabel + "</a> · " + SITE.hours;
+      document.getElementById("site-footer").innerHTML =
+        "<img class=\"logo\" src=\"" + SITE.logo + "\" alt=\"\">" +
+        "<p><strong>" + SITE.legal + "</strong><br>" + SITE.slogan + "<br>" +
+        "Jeff and Kim · " + SITE.address + "<br>" +
+        "<a href=\"" + SITE.phoneHref + "\">" + SITE.phone + "</a> · " +
+        "<a href=\"" + SITE.website + "\" target=\"_blank\" rel=\"noopener\">" + SITE.websiteLabel + "</a><br>" +
+        SITE.hours + "<br>" +
+        "<a href=\"" + SITE.facebook + "\" target=\"_blank\" rel=\"noopener\">Facebook</a></p>";
+    }
+
+    function mediaBlock(item) {
+      if (item.video) {
+        return "<div><p class=\"panel-label\">Video</p><div class=\"media-slot\">" +
+          "<video controls playsinline preload=\"metadata\" poster=\"" + item.poster + "\" " +
+          "style=\"aspect-ratio:9/16\">" +
+          "<source src=\"" + item.video + "\" type=\"video/mp4\">" +
+          "</video></div></div>";
+      }
+      const audio = item.audio
+        ? "<audio controls preload=\"metadata\" src=\"" + item.audio + "\"></audio>"
+        : "";
+      return "<div><p class=\"panel-label\">Video</p><div class=\"coming\">" +
+        "<strong>Video coming soon</strong><span>Slot is ready to drop in.</span>" +
+        audio + "</div></div>";
+    }
+
+    function renderHolidays() {
+      const root = document.getElementById("holiday-list");
+      HOLIDAYS.forEach(function (item) {
+        const card = el(
+          "<article class=\"holiday\" id=\"holiday-" + item.id + "\">" +
+            "<h3>" + item.name + "</h3>" +
+            "<p class=\"tagline\">" + item.tagline + "</p>" +
+            "<div class=\"holiday-grid\">" +
+              "<div><p class=\"panel-label\">Flyer</p>" +
+                "<a class=\"zoom\" href=\"" + item.flyer + "\" data-full=\"" + item.flyer + "\">" +
+                "<img src=\"" + item.flyer + "\" alt=\"" + item.name + " flyer\"></a></div>" +
+              "<div><p class=\"panel-label\">QR code</p>" +
+                "<a class=\"zoom\" href=\"" + item.qr + "\" data-full=\"" + item.qr + "\">" +
+                "<img src=\"" + item.qr + "\" alt=\"" + item.name + " QR card\"></a></div>" +
+              mediaBlock(item) +
+            "</div>" +
+          "</article>"
+        );
+        root.appendChild(card);
+      });
+    }
+
+    function renderCommercials() {
+      const root = document.getElementById("commercial-list");
+      COMMERCIALS.forEach(function (item) {
+        root.appendChild(el(
+          "<article class=\"card\">" +
+            "<video controls playsinline preload=\"metadata\" poster=\"" + item.poster + "\" " +
+            "style=\"aspect-ratio:" + item.ratio + "\">" +
+            "<source src=\"" + item.src + "\" type=\"video/mp4\"></video>" +
+            "<h3>" + item.title + "</h3>" +
+            "<p class=\"dur\">" + item.duration + "</p>" +
+          "</article>"
+        ));
+      });
+    }
+
+    function renderAudio() {
+      const root = document.getElementById("audio-list");
+      AUDIO.forEach(function (item) {
+        root.appendChild(el(
+          "<article class=\"card\">" +
+            "<h3>" + item.title + "</h3>" +
+            "<p class=\"dur\">" + item.duration + "</p>" +
+            "<audio controls preload=\"metadata\" src=\"" + item.src + "\"></audio>" +
+          "</article>"
+        ));
+      });
+    }
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = lightbox.querySelector("img");
+    document.getElementById("lightbox-close").addEventListener("click", function () {
+      lightbox.classList.remove("open");
+      lightboxImg.src = "";
+    });
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) {
+        lightbox.classList.remove("open");
+        lightboxImg.src = "";
+      }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        lightbox.classList.remove("open");
+        lightboxImg.src = "";
+      }
+    });
+    document.addEventListener("click", function (e) {
+      const a = e.target.closest("a.zoom");
+      if (!a) return;
+      e.preventDefault();
+      lightboxImg.src = a.getAttribute("data-full");
+      lightboxImg.alt = (a.querySelector("img") && a.querySelector("img").alt) || "";
+      lightbox.classList.add("open");
+    });
+
+    renderSite();
+    renderHolidays();
+    renderCommercials();
+    renderAudio();
+  </script>
+</body>
+</html>
