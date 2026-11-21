@@ -8,7 +8,7 @@ The page is a single `index.html` plus an `assets/` folder. Labels, contact info
 
 ## Add a holiday video
 
-Holiday slots already exist for New Year, Memorial Day, Fourth of July, Labor Day, Thanksgiving, Black Friday, and Christmas. Black Friday and Christmas already have videos. To drop in one of the others:
+Holiday slots already exist for New Year, Memorial Day, Fourth of July, Labor Day, Thanksgiving, Black Friday, and Christmas, and all seven already have videos. To replace one, or to add a video on a copied page:
 
 1. Put an H.264 MP4 in `assets/videos/`. Keep it under 50 MB (100 MB is the hard GitHub limit). 1080×1920, 30 fps, AAC audio, and `faststart` work best:
 
